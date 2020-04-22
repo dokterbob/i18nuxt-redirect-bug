@@ -44,6 +44,11 @@ export default {
         locales: ['en', 'pt'],
         defaultLocale: 'en',
         strategy: 'prefix',
+        detectBrowserLanguage: {
+          // This doesn't make a difference
+          useCookie: false,
+          alwaysRedirect: true
+        },
         vueI18n: {
           fallbackLocale: 'en',
           messages: {
