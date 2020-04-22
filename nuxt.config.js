@@ -38,6 +38,26 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    [
+      'nuxt-i18n',
+      {
+        locales: ['en', 'pt'],
+        defaultLocale: 'en',
+        strategy: 'prefix',
+        vueI18n: {
+          fallbackLocale: 'en',
+          messages: {
+            en: {
+              greeting: 'Hello world!'
+            },
+            pt: {
+              greeting: '¡Hola mundo!'
+            }
+          }
+        }
+      }
+    ]
+
   ],
   /*
   ** Build configuration

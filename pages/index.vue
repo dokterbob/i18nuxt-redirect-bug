@@ -3,7 +3,7 @@
     <div>
       <logo />
       <h1 class="title">
-        i18nuxt-redirect-bug
+        {{ $t('greeting') }}
       </h1>
       <h2 class="subtitle">
         My pioneering Nuxt.js project
